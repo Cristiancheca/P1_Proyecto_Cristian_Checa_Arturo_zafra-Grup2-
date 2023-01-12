@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/jpg" href="imagenes/favicon.jpg">
+  <meta charset="utf-8">
+  <meta name="description" content="En esta página podemos encontrar un pequeño questionaririo de que les parecio la pagina">
+  <title>Formulario</title>
+<style>
+
+.cont{text-align: center;
+
+}
+ 
+ form {
+ 
+  margin: 0 auto;
+  width: 400px;
+
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+
+input,
+textarea {
+ 
+  font: 1em sans-serif;
+
+ 
+  width: 300px;
+  box-sizing: border-box;
+
+
+  border: 1px solid #999;
+}
+
+
+textarea {
+
+  vertical-align: top;
+
+  height: 5em;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="cont">
+<h2>Formulario de contacto:</h2>
+</div>
+
+<form action="guardarformularios.php" method="post">
+  
+  <label for="fname">Nombre:</label><br><br>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="lname">Apellido:</label><br><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="lname">Correo electrónico:</label><br><br>
+  <input type="text" id="cname" name="cname" value=""><br><br>
+  <label for="lname">Describa brevemente el motivo de querer contactar con nosotros:</label><br>
+   <textarea id="msg" name="user_message"></textarea><br><br>
+  
+
+  <input type="submit" value="Submit">
+</form> 
+
+
+
+</body>
+</html>
